@@ -9,3 +9,7 @@ app.get("/redirect", (req, res) => {
 });
 
 app.listen(3000);
+
+app.get("/debug", (req, res) => {
+  res.send("debug secret: " + API_KEY);
+});
